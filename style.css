@@ -1,68 +1,80 @@
-/* Background gradient and font */
+/* Page background gradient and font */
 body {
-  background: linear-gradient(135deg, #2b5876, #4e4376);
+  background: linear-gradient(135deg, #2c648a, #6f57c8);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  transition: background 0.5s ease; /* Smooth transition when background changes */
 }
 
-/* Centered card style */
+/* Centered form card */
 .container {
   max-width: 550px;
-  background-color: #ffffffc2;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 40px 30px;
-  margin-top: 60px;
+  margin: 60px auto;
   border-radius: 20px;
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Slight zoom and shadow on hover */
 .container:hover {
-  transform: scale(1.02);
+  transform: scale(1.015);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Headline style */
+/* Form heading */
 h2 {
   font-weight: 700;
-  color: #4a4e69;
+  color: #3c096c;
   text-align: center;
   margin-bottom: 30px;
 }
 
-/* Labels */
+/* Label styling */
 label {
   font-weight: 600;
-  color: #22223b;
+  color: #1d1d3b;
 }
 
-/* Form input fields */
+/* Input field styling */
 .form-control {
   border-radius: 12px;
-  border: 2px solid #b8c1ec;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #d3d3f3;
+  transition: all 0.3s ease;
 }
 
+/* Input focus effect */
 .form-control:focus {
-  border-color: #9a8c98;
-  box-shadow: 0 0 0 0.2rem rgba(154, 140, 152, 0.25);
+  border-color: #541ca3;
+  box-shadow: 0 0 5px rgba(95, 32, 182, 0.25);
 }
 
-/* Bootstrap feedback styling */
+/* Error state */
 .is-invalid {
   border-color: #e63946;
 }
 
 .is-invalid:focus {
   border-color: #e63946;
-  box-shadow: 0 0 0 0.2rem rgba(230, 57, 70, 0.25);
+  box-shadow: 0 0 5px rgba(230, 57, 70, 0.25);
 }
 
+/* Valid state */
 .is-valid {
   border-color: #52b788;
 }
 
 .is-valid:focus {
   border-color: #52b788;
-  box-shadow: 0 0 0 0.2rem rgba(82, 183)
+  box-shadow: 0 0 5px rgba(82, 183, 136, 0.25);
+}
 
+/* Error message text */
+.form-text.text-danger,
+.invalid-feedback {
+  font-size: 0.85rem;
+  margin-top: 5px;
+  color: #d00000;
 }
