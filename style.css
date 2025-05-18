@@ -1,0 +1,68 @@
+/* Background gradient and font */
+body {
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered card style */
+.container {
+  max-width: 550px;
+  background-color: #ffffffc2;
+  padding: 40px 30px;
+  margin-top: 60px;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Headline style */
+h2 {
+  font-weight: 700;
+  color: #4a4e69;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  color: #22223b;
+}
+
+/* Form input fields */
+.form-control {
+  border-radius: 12px;
+  border: 2px solid #b8c1ec;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #9a8c98;
+  box-shadow: 0 0 0 0.2rem rgba(154, 140, 152, 0.25);
+}
+
+/* Bootstrap feedback styling */
+.is-invalid {
+  border-color: #e63946;
+}
+
+.is-invalid:focus {
+  border-color: #e63946;
+  box-shadow: 0 0 0 0.2rem rgba(230, 57, 70, 0.25);
+}
+
+.is-valid {
+  border-color: #52b788;
+}
+
+.is-valid:focus {
+  border-color: #52b788;
+  box-shadow: 0 0 0 0.2rem rgba(82, 183)
+
+}
